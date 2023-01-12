@@ -59,6 +59,8 @@ while(i<x):
     if(draw(s,s2)==True):
         d+=1
         print("This round is a Draw!!!!")
+    if((p1>x/2)or(p2>x/2)):
+        break
     
 if (p1>p2):
     print("User won The game!!!!")
@@ -66,5 +68,5 @@ if (p1>p2):
 if(p2>p1):
     print("Computer won the game!!!")
 
-if(p1==0 and p2==0 and d>0):
+if((p1==0 and p2==0 and d>0)or(p1==p2)):
     print("The game was a draw!!!")
