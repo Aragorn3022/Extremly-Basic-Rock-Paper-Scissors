@@ -1,5 +1,6 @@
 import random
 import os
+
 def Turn_input():
     s=int(input("Enter 1 for Rock,2 for Paper,or 3 for Scissor: "))
     s=Check_condition(s)
@@ -18,7 +19,7 @@ def choice(int1):
     if(int1==2):
         s="Paper"
     if(int1==3):
-        s="Rock"
+        s="Scissor"
     return s
 
 def win_condition_p1(s,s2):
